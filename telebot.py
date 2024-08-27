@@ -20,7 +20,7 @@ TOKEN = os.getenv("TELEGRAM_BOT_TOKEN")
 bot = Bot(token=TOKEN)
 dp = Dispatcher()
 
-GEMINI_API = os.getenv('Gemini_API_KEY')
+GEMINI_API = os.getenv('GEMINI_AI_API_KEY')
 genai.configure(api_key=GEMINI_API)
 model = genai.GenerativeModel(model_name='gemini-1.0-pro-latest')
 
